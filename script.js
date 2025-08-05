@@ -1,41 +1,29 @@
-let son = prompt("Sonni kiriting:");
-while (isNaN(son)|| son ===""|| son === null){
- son = prompt("Iltimos,sonni tugri kiriting:");  
-}
+let son = prompt("Sonni kiriting:"); while (isNaN(son) || son === "" || son === null) { son = prompt("Iltimos, sonni to'g'ri kiriting:"); }
 
-let daraja = prompt("Darajani kiriting:");
-while (isNaN(daraja)|| daraja ==="" || daraja===null) {
- daraja = prompt("Iltimos,darajani tugri kiriting:");   
-}
+let daraja = prompt("Darajani kiriting:"); while (isNaN(daraja) || daraja === "" || daraja === null) { daraja = prompt("Iltimos, darajani to'g'ri kiriting:"); }
 
-son = Number(son);
-daraja = Number(daraja);
+let natija = 1; let i = 0;
 
-let natija = 1;
-for (let i = 0; i < daraja; i++) {
-    natija = natija * son;
-}
-alert(son + "ning" + daraja + "-darajasi:" + natija); 
+while (i < daraja) { natija = natija * son; i++; }
+
+alert(son + " ning " + daraja + "-darajasi: " + natija);
 
 
-while (true) {
-    let son = prompt("Iltimos, biror son kiriting:");
-  
-    if (son === null) {
-      alert("Dastur tugadi.");
-    }
-  
-    else if (son == "" || isNaN(son)) {
-      alert("Bu son emas, iltimos son kiriting.");
-    }
-  
-    else {
-      son = Number(son);
-  
-      if (son % 2 === 0) {
-        alert("Bu son JUFT.");
-      } else {
-        alert("Bu son TOQ.");
-      }
-    }
-  }
+
+//while (true) {
+
+  //  let son = prompt("Iltimos, biror son kiriting:");
+
+    //if (son === null) {
+    //} else if (son == "" || isNaN(son)) {
+    //  alert("Bu son emas, iltimos son kiriting.");
+    //} else {
+    //  if (son % 2 == 0) {
+    //    alert("Bu son JUFT.");
+    //  } else {
+    //    alert("Bu son TOQ.");
+    //  }
+    //}
+  //}
+
+
