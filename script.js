@@ -1,6 +1,13 @@
-let son = prompt("Sonni kiriting:"); while (isNaN(son) || son === "" || son === null) { son = prompt("Iltimos, sonni to'g'ri kiriting:"); }
+let son = prompt("Sonni kiriting:"); 
+while (isNaN(son) || son === "" || son === null) { 
 
-let daraja = prompt("Darajani kiriting:"); while (isNaN(daraja) || daraja === "" || daraja === null) { daraja = prompt("Iltimos, darajani to'g'ri kiriting:"); }
+    son = prompt("Iltimos, sonni to'g'ri kiriting:"); }
+
+let daraja = prompt("Darajani kiriting:"); 
+
+while (isNaN(daraja) || daraja === "" || daraja === null) { 
+
+    daraja = prompt("Iltimos, darajani to'g'ri kiriting:"); }
 
 let natija = 1; let i = 0;
 
