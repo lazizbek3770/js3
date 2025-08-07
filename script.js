@@ -10,11 +10,11 @@ while (isNaN(a)|| a ==="" || a === null) {
 }
 
 let b = 1;
-for (let i = 1; i <= a; i*=4) {
-  b = b * i;
+for (let i = 1; i <= a; i++) {
+  b = b * sum;
 }
 
-alert("javob:"+b);
+alert(b);
 
 
 
