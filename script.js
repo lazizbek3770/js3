@@ -1,19 +1,20 @@
-let son = prompt("Sonni kiriting:"); 
-while (isNaN(son) || son === "" || son === null) { 
+let sum = prompt("Biror son kiriting");
 
-    son = prompt("Iltimos, sonni to'g'ri kiriting:"); }
+while (isNaN(sum)|| sum ==="" || sum === null) {
+  sum = prompt("Iltimos, faqat son kiriting");
+}
 
-let daraja = prompt("Darajani kiriting:"); 
+let a = prompt("Darajani kiriting");
+while (isNaN(a)|| a ==="" || a === null) {
+  a = prompt("Iltimos, faqat son kiriting");
+}
 
-while (isNaN(daraja) || daraja === "" || daraja === null) { 
+let b = 1;
+for (let i = 1; i <= a; i*=4) {
+  b = b * i;
+}
 
-    daraja = prompt("Iltimos, darajani to'g'ri kiriting:"); }
-
-let natija = 1; let i = 0;
-
-while (i < daraja) { natija = natija * son; i++; }
-
-alert(son + " ning " + daraja + "-darajasi: " + natija);
+alert("javob:"+b);
 
 
 
